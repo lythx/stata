@@ -1,0 +1,11 @@
+"czy_pali" "plec" "wiek"
+"1" TRUE "K" 23
+"2" TRUE "K" 21
+"3" FALSE "K" 57
+"4" TRUE "K" 43
+"5" TRUE "M" 26
+"6" TRUE "M" 35
+"7" FALSE "K" 64
+"8" TRUE "K" 48
+"9" TRUE "K" 44
+"10" FALSE "K" 50
