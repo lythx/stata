@@ -1,0 +1,3 @@
+pmultinom <- function() {
+  dmultinom()
+}

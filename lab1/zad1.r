@@ -4,35 +4,46 @@ y <- c(56, 34, 123, 5, -5, 0, -4, 3, 2, 0)
 A <- matrix(c(x, y), 2, length(x), TRUE)
 AT <- t(A) 
 ATy <- AT * y
+# print(A)
+# print(AT)
+# print(ATy)
 
 # 1b
 A2 <- matrix(c(45, 1, 3, 1, 33, 8, 3, 8, 36), 3, 3)
 b <- c(-5, -12, 7)
 detA2 <- det(A2)
 x2 <- solve(A2, b)
+# print(A2)
+# print(detA2)
+# print(x2)
 
 # 1c
 c <- c(3, 4, 5)
-B <- rbind(A2, c)
+B <- cbind(A2, c)
 d <- c(10, 20, 30, 40)
-G <- cbind(B, d)
+G <- rbind(B, d)
+# print(B)
+# print(G)
 
 # 1d
 dimnames(G) = list(c("Anna", "Natalia", "Monika", "Beata"), 
                    c("Tulipan", "Róża", "Lilia", "Hiacynt"))
 dimG <- dim(G)
+# print(G)
+# print(dimG)
 
 # 1e
 C <- matrix(1:9, 3, 3, TRUE,
             list(c("wiersz1", "wiersz2", "wiersz3"),
             c("kolumna1", "kolumna2", "kolumna3")))
+# print(C)
 
 # 1f
 Z <- array(x, c(3, 3, 2))
-print(Z)
 Z2 <- 1:18
 dim(Z2) <- c(3, 3, 2)
-print(Z2)
+# print(Z)
+# print(Z2)
 
 
 # 2a
@@ -48,6 +59,9 @@ for (i in 1:dimens[1]) {
     mat_sqrt[i, j] = sqrt(list1$mat_num[i, j])
   }
 }
+# print(list1)
+# print(type_list1)
+# print(mat_sqrt)
 
 # 2b
 palenie <- c(T, T, F, T, T, T, F, T, T, F)
@@ -63,11 +77,14 @@ for (p in badanie$plec) {
     ilosc_mezczyzn <- ilosc_mezczyzn + 1
   }
 }
-
+# print(badanie)
+# print(ilosc_kobiet)
+# print(ilosc_mezczyzn)
 
 # 3a
 write.table(badanie, "lab1/badanie.txt")
 Nowe_badanie <- read.table("lab1/badanie.txt")
+# print(Nowe_badanie)
 
 # 3b
 write.table(boot::beaver, "lab1/beaver.txt")
@@ -78,6 +95,7 @@ il_skalarny <- 0
 for (i in 1:nrow(boot::beaver)) {
   il_skalarny <- il_skalarny + boot::beaver[i, 1] * boot::beaver[i, 2]
 }
+# print(il_skalarny)
 
 # 4b
 ile_zer <- function(v) {
