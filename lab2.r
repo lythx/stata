@@ -8,7 +8,7 @@ data <- boot::acme$market
 N <- length(data)
 n = 1 + 3.222 * log(N)
 tab = table(cut(data, n)) / length(data)
-print(tab)
+# print(tab)
 
 # 2
 data <- boot::acme

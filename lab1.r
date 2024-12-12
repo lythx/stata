@@ -82,12 +82,12 @@ for (p in badanie$plec) {
 # print(ilosc_mezczyzn)
 
 # 3a
-write.table(badanie, "lab1/badanie.txt")
-Nowe_badanie <- read.table("lab1/badanie.txt")
+write.table(badanie, "data/badanie.txt")
+Nowe_badanie <- read.table("data/badanie.txt")
 # print(Nowe_badanie)
 
 # 3b
-write.table(boot::beaver, "lab1/beaver.txt")
+write.table(boot::beaver, "data/beaver.txt")
 
 
 # 4a
